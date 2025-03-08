@@ -43,6 +43,10 @@ nav {
     grid-auto-flow: column;
     gap: 1.5rem;
     align-items: center;
+
+    li{
+      color: #808080;
+    }
   }
 }
 
@@ -501,8 +505,54 @@ section {
     position:absolute;
     width: 29.125rem;
     height: 39.1875rem;
-    top: -16%;
+    top: -15.5%;
     right: -4%;
   }
 
+}
+
+.final-section{
+  padding: 5rem 2rem 2rem;
+  height: 22.5rem;
+  gap: 5rem;
+
+  &>div{
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .links a:nth-child(1){
+    color:#F7B733;
+    font-size: .75rem;
+    line-height: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 4.0625rem;
+  }
+
+  .links {
+    gap: 1.25rem;
+
+    a{
+      line-height: 1.25rem;
+      color: #808080;
+    }
+  }
+
+  footer{
+    align-items: center;
+    justify-content: space-between;
+
+    .icons-footer{
+    gap: 1.5rem;
+    align-items: center;
+    }
+
+    span{
+      font-size: .875rem;
+      line-height: 1.5rem;
+      color:#808080;
+    }
+
+  }
 }
