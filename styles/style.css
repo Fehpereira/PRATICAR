@@ -1,3 +1,5 @@
+@import url(utility.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +25,9 @@ a {
   text-decoration: none;
 }
 
+ul[role="list"] {
+  list-style: none;
+}
 
 nav {
   padding: 1.5rem 2rem ;
@@ -32,15 +37,15 @@ nav {
   align-items: center;
   grid-template-columns: 1fr;
   width: 80rem;
+
+  ul[role="list"] {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
 }
 
-ul[role="list"] {
-  list-style: none;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1.5rem;
-  align-items: center;
-}
 
 button {
     padding: .75rem 1.25rem;
@@ -253,6 +258,160 @@ section {
   }
 
 }
+
+.plans-price-wrapper{
+  padding: 5rem 2rem;
+  gap: 2rem;
+  
+  .pptitle{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* border: 1px solid red; */
+    max-width: 50rem;
+    margin: auto;
+    
+
+    h3 {
+      color: rgb(255, 208, 0);
+      letter-spacing: .1rem;
+      line-height: 100%;
+      font-size: .875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: white;
+      font-size: 3rem;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+  }
+
+  hr {
+    width: 20rem;
+    height: 1px;
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(to right, #18181B, #A1A1AA, #18181B);
+    margin-top:.5rem; 
+  }
+
+  .containerpp{
+    align-items: center;
+  }
+
+  .sptitle {
+    h2{
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 800;
+
+      &.family {
+        
+        &::after{
+          content: "/mês por pessoa";
+          color: gray;
+          line-height: 2.0;
+          font-size: 1rem;
+          margin-left: .25rem;
+          font-weight: 300;
+        }
+      }
+    
+      &.mensal {
+        &::after {
+          content: "/mês";
+        }
+      }
+
+    }
+    h3{
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+    p{
+      color: gray;
+      line-height: 1.6;
+    }
+  }
+
+  .sideplans{
+    width: 24rem;
+    height: 30rem;
+    border: 1px solid #27272A;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    background-color: #18181B;
+
+  }
+
+  .midplan {
+    border: 1px solid #F7B733;
+    border-radius: 1.5rem;
+    padding: 4.5rem 2rem 2rem 2rem;
+    height: 35rem;
+    background-color: #18181B;
+    position: relative;
+    overflow: hidden;
+
+    #before {
+      position: absolute;
+      background: linear-gradient(to right, #FC4A1A, #F7B733);
+      top: -0.1%;
+      left: -2%;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      border-radius: 0px 0px 1.5rem 0px;
+      font-size: .75rem ;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 8%;
+      line-height: 1rem;
+
+      span {
+        width: 9.75rem;
+        text-align: center;
+        padding: 12px 2rem;
+      }
+
+    }
+
+    .btn-plans {
+      background-color: white;
+      color: black;
+    }
+  }
+  
+  ul {
+    gap: 1rem;
+
+    li{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      
+      &:last-child{
+        align-items: flex-start;
+      }
+
+      span {
+        line-height: 1.5rem;
+        color: gray;
+      }
+    }
+  }
+}
+
+#cantar {
+  font-weight: 400;
+  line-height: 1.4;
+}
+
 
 
 

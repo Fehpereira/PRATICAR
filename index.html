@@ -8,19 +8,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
       <nav>
-        <h2>Zingen</h2>
+        <img src="assets/Zingen.svg" alt="Zingen logo">
         <ul role="list">
           <li><a href="#">Conheça o app</a></li>
           <li><a href="#">Funcionalidades</a></li>
           <li><a href="#">Planos e preços</a></li>
-          <li><a href="#"><button>Baixar agora</button></a></li>
+          <li><a href="#"><button class="btn-plans white">Baixar agora</button></a></li>
         </ul>
       </nav>
     </header>
@@ -29,11 +29,11 @@
         <div>
           <img src="assets/Music bars.svg" alt="Ondas sonoras">
           <h1>Quem canta seus males espanta</h1>
-          <h2>Cantar nunca foi tão fácil</h2>
+          <h2 id="cantar">Cantar nunca foi tão fácil</h2>
         </div>
         <div class="button-wrapper">
-          <button>Ver planos</button>
-          <button>Baixar agora</button>
+          <button class="btn-plans">Ver planos</button>
+          <button class="btn-plans white btn-lg">Baixar agora</button>
         </div>
       </section>
 
@@ -116,6 +116,120 @@
         </div>
       </section>
 
+      <section class="plans-price-wrapper flex column">
+
+        <div class="pptitle">
+          <h3>Planos e preços</h3>
+          <h2>Assine e tenha acesso ilimitado a todas as funcionalidades</h2>
+        </div>
+
+        <div class="containerpp flex gap-2">
+
+          <div class="sideplans flex column gap-2">
+
+            <div class="sptitle flex column gap-1.5">
+
+              <div class="title1 flex column gap-0.25">
+                <h3>Básico</h3>
+                <p>Baixe o  app e comece a cantar agora mesmo!</p>
+              </div>
+
+              <h2>Grátis</h2>
+              <button class="btn-plans">Baixar agora</button>
+              <hr>
+            </div>
+
+
+            <ul role="list" class="flex column">
+              <li>
+                <img src="assets/Check.svg" alt="Ícone de checado">
+                <span >Com anúncios</span>
+              </li>
+
+              <li>
+                <img src="assets/Check.svg" alt="Ícone de checado">
+                <span>Até 5 músicas por dia</span>
+              </li>
+
+              <li>
+                <img src="assets/Check.svg" alt="Ícone de checado">
+                <span>Cante apenas as músicas disponíveis no plano gratuito</span>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="midplan flex column gap-2">
+
+            <div id="before" class="flex">
+              <span>1 mês grátis</span>
+            </div>
+
+            <div class="sptitle flex column gap-1.5">
+              <div class="title1 flex column gap-0.25">
+                <h3>Premium</h3>
+                <p>Ideal para quem já cansou de passar vergonha no Karaokê</p>
+              </div>
+
+              <h2 class="family mensal">R$ 24,90</h2>
+              <button class="btn-plans">Experimente de graça</button>
+              <hr>
+            </div>
+
+            <ul role="list" class="flex column">
+              <li>
+                <img src="assets/Check.svg" alt="Ícone de checado">
+                <span >Sem interrupção de anúncios</span>
+              </li>
+
+              <li>
+                <img src="assets/Check.svg" alt="Ícone de checado">
+                <span>Cante quantas músicas quiser</span>
+              </li>
+
+              <li>
+                <img src="assets/Check.svg" alt="Ícone de checado">
+                <span>Cante todas as músicas da biblioteca</span>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="sideplans flex column gap-2">
+
+            <div class="sptitle flex column gap-1.5">
+              <div class="title1 flex column gap-0.25">
+                <h3>Família</h3>
+                <p>Para aquelas famílias que adoram se reunir pra cantar</p>
+              </div>
+
+              <h2 class="family">R$ 21,90 </h2>
+              <button class="btn-plans">Assinar agora</button>
+
+              <hr>
+              </div>
+              
+              <ul role="list" class="flex column">
+                <li>
+                  <img src="assets/Check.svg" alt="Ícone de checado">
+                  <span >Sem interrupção de anúncios</span>
+                </li>
+  
+                <li>
+                  <img src="assets/Check.svg" alt="Ícone de checado">
+                  <span>Cante quantas músicas quiser</span>
+                </li>
+  
+                <li>
+                  <img src="assets/Check.svg" alt="Ícone de checado">
+                  <span>Cante todas as músicas da biblioteca</span>
+                </li>
+              </ul>
+
+            </div>
+
+        </div>
+      </section>
     </main>
   </div>
 </body>
